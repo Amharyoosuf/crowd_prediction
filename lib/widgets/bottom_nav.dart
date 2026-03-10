@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../screens/home_screen.dart';
 import '../screens/explore_screen.dart';
-import '../screens/budget_screen.dart';
+import '../screens/budget_prediction_screen.dart';
 import '../screens/emergency_screen.dart';
 
 class BottomNav extends StatefulWidget {
@@ -16,7 +16,7 @@ class _BottomNavState extends State<BottomNav> {
 
   final List<Widget> _screens = const [
     HomeScreen(),
-    BudgetScreen(),
+    BudgetPredictionScreen(),
     ExploreScreen(),
     EmergencyScreen(),
   ];

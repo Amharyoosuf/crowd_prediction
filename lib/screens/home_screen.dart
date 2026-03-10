@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../widgets/floating_mic.dart';
 import 'event_calendar_screen.dart';
 import 'predict_crowd_level.dart';
+import 'budget_prediction_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -33,6 +34,21 @@ class HomeScreen extends StatelessWidget {
                     );
                   },
                 ),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    minimumSize: const Size(200, 50),
+                  ),
+                  child: const Text("Predict Trip Budget"),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => const BudgetPredictionScreen(),
+                      ),
+                    );
+                  },
+                ),
+                const SizedBox(height: 20),
                 const SizedBox(height: 20),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
