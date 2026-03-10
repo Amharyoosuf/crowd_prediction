@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../widgets/floating_mic.dart';
-import 'predict_screen.dart';
 import 'event_calendar_screen.dart';
 import 'predict_crowd_level.dart';
 
