@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../widgets/floating_mic.dart';
 import 'predict_screen.dart';
 import 'event_calendar_screen.dart';
+import 'predict_crowd_level.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -29,6 +30,20 @@ class HomeScreen extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (_) => const PredictScreen(),
+                      ),
+                    );
+                  },
+                ),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    minimumSize: const Size(200, 50),
+                  ),
+                  child: const Text("View Prediction Result"),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => const PredictCrowdLevelScreen(),
                       ),
                     );
                   },
