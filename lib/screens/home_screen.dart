@@ -24,20 +24,6 @@ class HomeScreen extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(200, 50),
                   ),
-                  child: const Text("Predict Crowd Level"),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (_) => const PredictScreen(),
-                      ),
-                    );
-                  },
-                ),
-                ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    minimumSize: const Size(200, 50),
-                  ),
                   child: const Text("View Prediction Result"),
                   onPressed: () {
                     Navigator.push(
