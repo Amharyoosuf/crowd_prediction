@@ -7,37 +7,37 @@ final List<Map<String, dynamic>> naturePlaces = [
   },
   {
     'name': 'Knuckles Mountain Range',
-    'image': 'assets/images/explore/adams_peak.jpg',
+    'image': 'assets/images/knuckles.jpg',
     'lat': 7.3751,
     'lng': 80.6790
   },
   {
     'name': 'Pidurutalagala (Highest Peak)',
-    'image': 'assets/images/explore/pidurutalagala.jpg',
+    'image': 'assets/images/pidurutalagala.jpg',
     'lat': 7.0008,
     'lng': 80.7739
   },
   {
     'name': 'Adam\'s Peak (Sri Pada)',
-    'image': 'assets/images/explore/adams_peak.jpg',
+    'image': 'assets/images/adams_peak.jpg',
     'lat': 6.8068,
     'lng': 80.4932
   },
   {
     'name': 'Sinharaja Forest Reserve',
-    'image': 'assets/images/explore/sinharaja.jpg',
+    'image': 'assets/images/sinharaja.jpg',
     'lat': 6.3436,
     'lng': 80.4991
   },
   {
     'name': 'Ella Rock',
-    'image': 'assets/images/explore/ella_rock.jpg',
+    'image': 'assets/images/ella_rock.jpg',
     'lat': 6.8700,
     'lng': 81.0470
   },
   {
     'name': 'Dunhinda Falls',
-    'image': 'assets/images/explore/dunhinda_falls.jpg',
+    'image': 'assets/images/dunhinda_falls.jpg',
     'lat': 6.9920,
     'lng': 81.0530
   },
