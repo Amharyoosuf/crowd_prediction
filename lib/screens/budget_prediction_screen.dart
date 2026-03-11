@@ -18,17 +18,17 @@ class _BudgetPredictionScreenState extends State<BudgetPredictionScreen> {
   String selectedClass = 'Normal';
   final List<String> classes = ['Budget', 'Normal', 'High Class'];
 
-  final List<String> allDistricts = [
-    'Kandy',
-    'Galle',
-    'Trincomalee',
-    'Colombo',
-    'Matara',
-    'Hambantota',
-    'Nuwara Eliya',
-    'Ella',
-    'Anuradhapura',
-    'Polonnaruwa',
+  final List<Map<String, String>> allDistricts = [
+    {'name': 'Kandy', 'image': 'assets/images/kandy.jpeg'},
+    {'name': 'Galle', 'image': 'assets/images/galle.jpeg'},
+    {'name': 'Trincomalee', 'image': 'assets/images/trincomalee.jpg'},
+    {'name': 'Colombo', 'image': 'assets/images/colombo.jpeg'},
+    {'name': 'Matara', 'image': 'assets/images/matara.jpeg'},
+    {'name': 'Hambantota', 'image': 'assets/images/hambanthota.jpeg'},
+    {'name': 'Nuwara Eliya', 'image': 'assets/images/Nuwara eliya.jpeg'},
+    {'name': 'Ella', 'image': 'assets/images/ella.jpeg'},
+    {'name': 'Anuradhapura', 'image': 'assets/images/Anuradhapura.jpeg'},
+    {'name': 'Polonnaruwa', 'image': 'assets/images/polannaruwa.jpeg'},
   ];
 
   final List<String> selectedDistricts = [];
@@ -163,74 +163,105 @@ class _BudgetPredictionScreenState extends State<BudgetPredictionScreen> {
             ),
           ),
           const SizedBox(height: 16),
-          Wrap(
-            spacing: 10,
-            runSpacing: 10,
-            children: allDistricts.map((district) {
-              final isSelected = selectedDistricts.contains(district);
+          GridView.builder(
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            itemCount: allDistricts.length,
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2,
+              crossAxisSpacing: 12,
+              mainAxisSpacing: 12,
+              childAspectRatio: 1.25,
+            ),
+            itemBuilder: (context, index) {
+              final district = allDistricts[index];
+              final districtName = district['name']!;
+              final imagePath = district['image']!;
+              final isSelected = selectedDistricts.contains(districtName);
 
               return GestureDetector(
                 onTap: () {
                   setState(() {
                     if (isSelected) {
-                      selectedDistricts.remove(district);
+                      selectedDistricts.remove(districtName);
                     } else {
-                      selectedDistricts.add(district);
+                      selectedDistricts.add(districtName);
                     }
                   });
                 },
                 child: AnimatedContainer(
-                  duration: const Duration(milliseconds: 220),
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 16,
-                    vertical: 12,
-                  ),
+                  duration: const Duration(milliseconds: 250),
                   decoration: BoxDecoration(
-                    gradient: isSelected
-                        ? const LinearGradient(
-                      colors: [Color(0xFF1E88E5), Color(0xFF42A5F5)],
-                    )
-                        : null,
-                    color: isSelected ? null : const Color(0xFFF5F7FB),
-                    borderRadius: BorderRadius.circular(14),
+                    borderRadius: BorderRadius.circular(18),
                     border: Border.all(
                       color: isSelected
-                          ? Colors.transparent
-                          : Colors.grey.shade300,
+                          ? const Color(0xFF1565C0)
+                          : Colors.transparent,
+                      width: 3,
                     ),
-                    boxShadow: isSelected
-                        ? [
+                    boxShadow: [
                       BoxShadow(
-                        color: Colors.blue.withOpacity(0.25),
-                        blurRadius: 12,
+                        color: Colors.black.withOpacity(0.12),
+                        blurRadius: 10,
                         offset: const Offset(0, 4),
-                      ),
-                    ]
-                        : [],
-                  ),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Icon(
-                        isSelected
-                            ? Icons.check_circle
-                            : Icons.place_outlined,
-                        size: 18,
-                        color: isSelected ? Colors.white : Colors.black54,
-                      ),
-                      const SizedBox(width: 8),
-                      Text(
-                        district,
-                        style: TextStyle(
-                          color: isSelected ? Colors.white : Colors.black87,
-                          fontWeight: FontWeight.w600,
-                        ),
                       ),
                     ],
                   ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(16),
+                    child: Stack(
+                      fit: StackFit.expand,
+                      children: [
+                        Image.asset(
+                          imagePath,
+                          fit: BoxFit.cover,
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: [
+                                Colors.black.withOpacity(0.15),
+                                Colors.black.withOpacity(0.55),
+                              ],
+                            ),
+                          ),
+                        ),
+                        if (isSelected)
+                          const Positioned(
+                            top: 8,
+                            right: 8,
+                            child: CircleAvatar(
+                              radius: 14,
+                              backgroundColor: Colors.white,
+                              child: Icon(
+                                Icons.check,
+                                size: 18,
+                                color: Color(0xFF1565C0),
+                              ),
+                            ),
+                          ),
+                        Positioned(
+                          left: 12,
+                          right: 12,
+                          bottom: 12,
+                          child: Text(
+                            districtName,
+                            textAlign: TextAlign.center,
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
               );
-            }).toList(),
+            },
           ),
         ],
       ),
