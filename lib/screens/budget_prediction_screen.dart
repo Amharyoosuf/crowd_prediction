@@ -349,9 +349,17 @@ class _BudgetPredictionScreenState extends State<BudgetPredictionScreen> {
         if (value == null || value.trim().isEmpty) {
           return validatorMessage;
         }
-        if (int.tryParse(value.trim()) == null) {
+
+        final number = int.tryParse(value.trim());
+
+        if (number == null) {
           return 'Enter a valid number';
         }
+
+        if (number <= 0) {
+          return 'Value must be greater than 0';
+        }
+
         return null;
       },
     );
@@ -409,17 +417,13 @@ class _BudgetPredictionScreenState extends State<BudgetPredictionScreen> {
 
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.all(22),
       decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          colors: [Color(0xFF0D47A1), Color(0xFF1976D2)],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
+        color: const Color(0xFF1565C0),
         borderRadius: BorderRadius.circular(24),
         boxShadow: [
           BoxShadow(
-            color: Colors.blue.withOpacity(0.22),
+            color: Colors.blue.withOpacity(0.35),
             blurRadius: 18,
             offset: const Offset(0, 8),
           ),
@@ -436,40 +440,27 @@ class _BudgetPredictionScreenState extends State<BudgetPredictionScreen> {
                 'Budget Prediction Result',
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 19,
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
               ),
             ],
           ),
           const SizedBox(height: 18),
-          Container(
-            width: double.infinity,
-            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(18),
+          Text(
+            'Estimated Cost',
+            style: TextStyle(
+              fontSize: 16,
+              color: Colors.white.withOpacity(0.85),
             ),
-            child: Column(
-              children: [
-                const Text(
-                  'Estimated Cost',
-                  style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.black54,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                const SizedBox(height: 8),
-                Text(
-                  '${result!['estimated_cost_lkr']} LKR',
-                  style: const TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.green,
-                  ),
-                ),
-              ],
+          ),
+          const SizedBox(height: 10),
+          Text(
+            '${result!['estimated_cost_lkr']} LKR',
+            style: const TextStyle(
+              fontSize: 34,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
             ),
           ),
         ],
