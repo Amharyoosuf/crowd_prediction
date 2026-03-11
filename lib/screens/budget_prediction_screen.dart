@@ -3,6 +3,8 @@ import '../services/budget_api_service.dart';
 import '../services/local_data_service.dart';
 import '../models/accommodation_model.dart';
 import '../models/dining_model.dart';
+import 'accommodation_screen.dart';
+import 'dining_screen.dart';
 
 class BudgetPredictionScreen extends StatefulWidget {
   const BudgetPredictionScreen({super.key});
@@ -331,6 +333,7 @@ class _BudgetPredictionScreenState extends State<BudgetPredictionScreen> {
             label: 'Adults',
             icon: Icons.person,
             validatorMessage: 'Enter number of adults',
+            allowZero: false,
           ),
           const SizedBox(height: 14),
           buildTextField(
@@ -338,6 +341,7 @@ class _BudgetPredictionScreenState extends State<BudgetPredictionScreen> {
             label: 'Children',
             icon: Icons.child_care,
             validatorMessage: 'Enter number of children',
+            allowZero: true,
           ),
           const SizedBox(height: 14),
           buildTextField(
@@ -345,6 +349,7 @@ class _BudgetPredictionScreenState extends State<BudgetPredictionScreen> {
             label: 'Days',
             icon: Icons.calendar_today,
             validatorMessage: 'Enter number of days',
+            allowZero: false,
           ),
           const SizedBox(height: 14),
           DropdownButtonFormField<String>(
@@ -392,6 +397,7 @@ class _BudgetPredictionScreenState extends State<BudgetPredictionScreen> {
     required String label,
     required IconData icon,
     required String validatorMessage,
+    required bool allowZero,
   }) {
     return TextFormField(
       controller: controller,
@@ -428,8 +434,14 @@ class _BudgetPredictionScreenState extends State<BudgetPredictionScreen> {
           return 'Enter a valid number';
         }
 
-        if (number <= 0) {
-          return 'Value must be greater than 0';
+        if (allowZero) {
+          if (number < 0) {
+            return 'Value cannot be negative';
+          }
+        } else {
+          if (number <= 0) {
+            return 'Value must be greater than 0';
+          }
         }
 
         return null;
@@ -529,6 +541,7 @@ class _BudgetPredictionScreenState extends State<BudgetPredictionScreen> {
           const SizedBox(height: 10),
           Text(
             '${result!['estimated_cost_lkr']} LKR',
+            textAlign: TextAlign.center,
             style: const TextStyle(
               fontSize: 34,
               fontWeight: FontWeight.bold,
@@ -540,149 +553,96 @@ class _BudgetPredictionScreenState extends State<BudgetPredictionScreen> {
     );
   }
 
-  Widget buildAccommodationSection() {
+  Widget buildRecommendationButtons() {
     if (result == null) return const SizedBox();
 
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.all(18),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(22),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.06),
-            blurRadius: 18,
-            offset: const Offset(0, 6),
-          ),
-        ],
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const Row(
-            children: [
-              Icon(Icons.hotel, color: Color(0xFF1565C0)),
-              SizedBox(width: 8),
-              Text(
-                'Recommended Accommodation',
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 14),
-          if (filteredAccommodations.isEmpty)
-            const Text(
-              'No accommodation found for the selected destination and class.',
-              style: TextStyle(color: Colors.black54),
-            )
-          else
-            ...filteredAccommodations.map((hotel) {
-              return Container(
-                margin: const EdgeInsets.only(bottom: 12),
-                padding: const EdgeInsets.all(14),
-                decoration: BoxDecoration(
-                  color: const Color(0xFFF7F9FC),
-                  borderRadius: BorderRadius.circular(16),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      hotel.hotelName,
-                      style: const TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
+    return Column(
+      children: [
+        Row(
+          children: [
+            Expanded(
+              child: ElevatedButton.icon(
+                onPressed: filteredAccommodations.isEmpty
+                    ? null
+                    : () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => AccommodationScreen(
+                        accommodations: filteredAccommodations,
                       ),
                     ),
-                    const SizedBox(height: 6),
-                    Text('District: ${hotel.district}'),
-                    Text('Class: ${hotel.travelClass}'),
-                    Text('Price per Night: ${hotel.pricePerNightLkr} LKR'),
-                    Text('Rating: ${hotel.rating}'),
-                  ],
-                ),
-              );
-            }),
-        ],
-      ),
-    );
-  }
-
-  Widget buildDiningSection() {
-    if (result == null) return const SizedBox();
-
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.all(18),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(22),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.06),
-            blurRadius: 18,
-            offset: const Offset(0, 6),
-          ),
-        ],
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const Row(
-            children: [
-              Icon(Icons.restaurant, color: Color(0xFF1565C0)),
-              SizedBox(width: 8),
-              Text(
-                'Recommended Dining Places',
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
+                  );
+                },
+                icon: const Icon(Icons.hotel),
+                label: const Text('Accommodation'),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFF1565C0),
+                  foregroundColor: Colors.white,
+                  disabledBackgroundColor: Colors.grey.shade300,
+                  disabledForegroundColor: Colors.grey.shade600,
+                  padding: const EdgeInsets.symmetric(vertical: 14),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
                 ),
               ),
-            ],
-          ),
-          const SizedBox(height: 14),
-          if (filteredDiningPlaces.isEmpty)
-            const Text(
-              'No dining places found for the selected destination and class.',
-              style: TextStyle(color: Colors.black54),
-            )
-          else
-            ...filteredDiningPlaces.map((place) {
-              return Container(
-                margin: const EdgeInsets.only(bottom: 12),
-                padding: const EdgeInsets.all(14),
-                decoration: BoxDecoration(
-                  color: const Color(0xFFF7F9FC),
-                  borderRadius: BorderRadius.circular(16),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      place.restaurantName,
-                      style: const TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: ElevatedButton.icon(
+                onPressed: filteredDiningPlaces.isEmpty
+                    ? null
+                    : () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => DiningScreen(
+                        diningPlaces: filteredDiningPlaces,
                       ),
                     ),
-                    const SizedBox(height: 6),
-                    Text('District: ${place.district}'),
-                    Text('Class: ${place.travelClass}'),
-                    Text('Specialty: ${place.specialty}'),
-                    Text('Approx. Range: ${place.approxRangeLkr}'),
-                    Text('Best Time: ${place.bestTime}'),
-                    Text('Time: ${place.timeCategory}'),
-                  ],
+                  );
+                },
+                icon: const Icon(Icons.restaurant),
+                label: const Text('Dining'),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFFFF7043),
+                  foregroundColor: Colors.white,
+                  disabledBackgroundColor: Colors.grey.shade300,
+                  disabledForegroundColor: Colors.grey.shade600,
+                  padding: const EdgeInsets.symmetric(vertical: 14),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
                 ),
-              );
-            }),
-        ],
-      ),
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 10),
+        if (filteredAccommodations.isEmpty || filteredDiningPlaces.isEmpty)
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              color: Colors.amber.shade50,
+              borderRadius: BorderRadius.circular(14),
+              border: Border.all(color: Colors.amber.shade200),
+            ),
+            child: Text(
+              [
+                if (filteredAccommodations.isEmpty)
+                  'No accommodation found for selected destination and class.',
+                if (filteredDiningPlaces.isEmpty)
+                  'No dining places found for selected destination and class.',
+              ].join('\n'),
+              style: const TextStyle(
+                color: Colors.black87,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+      ],
     );
   }
 
@@ -727,9 +687,7 @@ class _BudgetPredictionScreenState extends State<BudgetPredictionScreen> {
                       const SizedBox(height: 16),
                       buildResultCard(),
                       const SizedBox(height: 16),
-                      buildAccommodationSection(),
-                      const SizedBox(height: 16),
-                      buildDiningSection(),
+                      buildRecommendationButtons(),
                       const SizedBox(height: 20),
                     ],
                   ),
