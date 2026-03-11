@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import '../services/budget_api_service.dart';
+import '../services/local_data_service.dart';
+import '../models/accommodation_model.dart';
+import '../models/dining_model.dart';
 
 class BudgetPredictionScreen extends StatefulWidget {
   const BudgetPredictionScreen({super.key});
@@ -37,6 +40,9 @@ class _BudgetPredictionScreenState extends State<BudgetPredictionScreen> {
   Map<String, dynamic>? result;
   String? errorMessage;
 
+  List<AccommodationModel> filteredAccommodations = [];
+  List<DiningModel> filteredDiningPlaces = [];
+
   Future<void> submitBudgetPrediction() async {
     if (!_formKey.currentState!.validate()) return;
 
@@ -51,6 +57,8 @@ class _BudgetPredictionScreenState extends State<BudgetPredictionScreen> {
       isLoading = true;
       errorMessage = null;
       result = null;
+      filteredAccommodations = [];
+      filteredDiningPlaces = [];
     });
 
     try {
@@ -62,8 +70,41 @@ class _BudgetPredictionScreenState extends State<BudgetPredictionScreen> {
         districts: selectedDistricts,
       );
 
+      final allAccommodations = await LocalDataService.loadAccommodations();
+      final allDiningPlaces = await LocalDataService.loadDiningPlaces();
+
+      final matchedAccommodations = allAccommodations.where((item) {
+        final districtMatched = selectedDistricts.any(
+              (district) =>
+          item.district.toLowerCase().trim() ==
+              district.toLowerCase().trim(),
+        );
+
+        final classMatched =
+            item.travelClass.toLowerCase().trim() ==
+                selectedClass.toLowerCase().trim();
+
+        return districtMatched && classMatched;
+      }).toList();
+
+      final matchedDiningPlaces = allDiningPlaces.where((item) {
+        final districtMatched = selectedDistricts.any(
+              (district) =>
+          item.district.toLowerCase().trim() ==
+              district.toLowerCase().trim(),
+        );
+
+        final classMatched =
+            item.travelClass.toLowerCase().trim() ==
+                selectedClass.toLowerCase().trim();
+
+        return districtMatched && classMatched;
+      }).toList();
+
       setState(() {
         result = response;
+        filteredAccommodations = matchedAccommodations;
+        filteredDiningPlaces = matchedDiningPlaces;
       });
     } catch (e) {
       setState(() {
@@ -499,6 +540,152 @@ class _BudgetPredictionScreenState extends State<BudgetPredictionScreen> {
     );
   }
 
+  Widget buildAccommodationSection() {
+    if (result == null) return const SizedBox();
+
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(18),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(22),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.06),
+            blurRadius: 18,
+            offset: const Offset(0, 6),
+          ),
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Row(
+            children: [
+              Icon(Icons.hotel, color: Color(0xFF1565C0)),
+              SizedBox(width: 8),
+              Text(
+                'Recommended Accommodation',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 14),
+          if (filteredAccommodations.isEmpty)
+            const Text(
+              'No accommodation found for the selected destination and class.',
+              style: TextStyle(color: Colors.black54),
+            )
+          else
+            ...filteredAccommodations.map((hotel) {
+              return Container(
+                margin: const EdgeInsets.only(bottom: 12),
+                padding: const EdgeInsets.all(14),
+                decoration: BoxDecoration(
+                  color: const Color(0xFFF7F9FC),
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      hotel.hotelName,
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 6),
+                    Text('District: ${hotel.district}'),
+                    Text('Class: ${hotel.travelClass}'),
+                    Text('Price per Night: ${hotel.pricePerNightLkr} LKR'),
+                    Text('Rating: ${hotel.rating}'),
+                  ],
+                ),
+              );
+            }),
+        ],
+      ),
+    );
+  }
+
+  Widget buildDiningSection() {
+    if (result == null) return const SizedBox();
+
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(18),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(22),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.06),
+            blurRadius: 18,
+            offset: const Offset(0, 6),
+          ),
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Row(
+            children: [
+              Icon(Icons.restaurant, color: Color(0xFF1565C0)),
+              SizedBox(width: 8),
+              Text(
+                'Recommended Dining Places',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 14),
+          if (filteredDiningPlaces.isEmpty)
+            const Text(
+              'No dining places found for the selected destination and class.',
+              style: TextStyle(color: Colors.black54),
+            )
+          else
+            ...filteredDiningPlaces.map((place) {
+              return Container(
+                margin: const EdgeInsets.only(bottom: 12),
+                padding: const EdgeInsets.all(14),
+                decoration: BoxDecoration(
+                  color: const Color(0xFFF7F9FC),
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      place.restaurantName,
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 6),
+                    Text('District: ${place.district}'),
+                    Text('Class: ${place.travelClass}'),
+                    Text('Specialty: ${place.specialty}'),
+                    Text('Approx. Range: ${place.approxRangeLkr}'),
+                    Text('Best Time: ${place.bestTime}'),
+                    Text('Time: ${place.timeCategory}'),
+                  ],
+                ),
+              );
+            }),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -539,6 +726,10 @@ class _BudgetPredictionScreenState extends State<BudgetPredictionScreen> {
                         ),
                       const SizedBox(height: 16),
                       buildResultCard(),
+                      const SizedBox(height: 16),
+                      buildAccommodationSection(),
+                      const SizedBox(height: 16),
+                      buildDiningSection(),
                       const SizedBox(height: 20),
                     ],
                   ),
