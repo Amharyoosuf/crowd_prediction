@@ -1,0 +1,578 @@
+District,Hotel_Name,Price_Per_Night_LKR,Rating,Class
+Kandy,Kandy Rivers Edge Nature Resort,11905,N/A,Normal
+Kandy,Vendol Sky Resort,4948,Scored 6.0,Budget
+Kandy,Villa Avora Ridge,13359,N/A,Normal
+Kandy,Mount Vista Homestay Kandy,5257,N/A,Budget
+Kandy,Mulberry villa,15585,N/A,Normal
+Kandy,Tropical lake shade villa,4329,N/A,Budget
+Kandy,Salika,7731,N/A,Budget
+Kandy,Windsor Crest,5690,N/A,Budget
+Kandy,The Sunset Lookout Villa -Foreign,3562,N/A,Budget
+Kandy,Colonial Boutique Villa Kandy,111323,N/A,High Class
+Kandy,Akshi Hostel,2969,N/A,Budget
+Kandy,Dr Hostel - Villa 27,7360,N/A,Budget
+Kandy,Hotel Blue Mount View Kandy,5566,Scored 6.0,Budget
+Kandy,Ostello del Bigallo,3092,N/A,Budget
+Kandy,Mount Pillar Homestay,2474,N/A,Budget
+Kandy,The Kandy City Townhouse,12524,N/A,Normal
+Kandy,Adler Sky Apartments,17812,N/A,Normal
+Kandy,Dhunumadalawa Jungle Paradise Hostel,1855,Scored 9.0,Budget
+Kandy,Queens Residence Homestay,6185,N/A,Budget
+Kandy,Araliya Enchanted Evergreen,6234,N/A,Budget
+Kandy,Mount Boutique Villa,7669,N/A,Budget
+Kandy,Bungalow 36,10205,N/A,Normal
+Kandy,Upali Homestay,5937,N/A,Budget
+Kandy,The Secret Place Hotel & Resort,5016,N/A,Budget
+Kandy,Heuvel Villa Kandy,24738,Scored 10,High Class
+Kandy,Mi casa,9277,N/A,Budget
+Kandy,Urban Kandy City Hotel,5844,Scored 9.4,Budget
+Kandy,Giripura Resort - Kandy,6185,Scored 7.0,Budget
+Kandy,Charming 3-Bedroom Apartment with Garden in Kandy,16587,N/A,Normal
+Kandy,Ranthilaka Villas,7112,Scored 10,Budget
+Kandy,Windsor,2505,Scored 10,Budget
+Kandy,Dream Cool Residence,7493,N/A,Budget
+Kandy,Swarna Vimanaya Luxury Boutique Hotel,24887,N/A,High Class
+Kandy,Yellow Rose Hotel,13915,N/A,Normal
+Kandy,Green City View Kandy,7112,Scored 8.0,Budget
+Kandy,Blissful Ridge Bungalow Kandy,9741,N/A,Budget
+Kandy,Villa Mistora,4638,Scored 8.0,Budget
+Kandy,Kalugamuwa Mist By Kugans,8906,N/A,Budget
+Kandy,Nature Breeze Boutique Villa,6185,Scored 9.9,Budget
+Kandy,You koso homestay,2226,Scored 10,Budget
+Kandy,Kandy City Mirror Hostel,1546,Scored 10,Budget
+Kandy,Villa Lady Hill,5566,Scored 5.0,Budget
+Kandy,Green view homestay,3092,Scored 8.1,Budget
+Kandy,Luna Leaf,4948,Scored 9.5,Budget
+Kandy,Sion Villa,9042,Scored 9.3,Budget
+Kandy,Red Star Kandy Home Stay,3711,Scored 9.6,Budget
+Kandy,Relax Comfort House,15461,N/A,Normal
+Kandy,Mannat,27831,N/A,High Class
+Kandy,Gardenia,12369,N/A,Normal
+Kandy,Serene Heights Bungalows,11516,Scored 10,Normal
+Kandy,Ivory Crest,8040,Scored 10,Budget
+Kandy,Babylon Kandy,9277,N/A,Budget
+Kandy,HillCrest Hotel,15461,N/A,Normal
+Kandy,Ridee Kandy,71432,Scored 8.4,High Class
+Kandy,Kandiana 6A,6726,N/A,Budget
+Kandy,Royal Avenue Kandy,19986,N/A,Normal
+Kandy,beehive villa,6185,N/A,Budget
+Kandy,Beehive mountain resident,6185,Scored 5.0,Budget
+Kandy,Cloud Nest Hanthana,6494,N/A,Budget
+Kandy,Hill Crest Mansion,10019,N/A,Normal
+Kandy,Akshaya Guest Inn Kandy,5715,Scored 10,Budget
+Kandy,Kandy Dream Villa & Hostel,5257,N/A,Budget
+Kandy,35-B-5 Kandy,18554,Scored 10,Normal
+Kandy,Sky rise mount hotel,4948,Scored 9.3,Budget
+Kandy,Bloom Hill Kandy,7793,Scored 8.4,Budget
+Kandy,Dreams Hotel,4948,N/A,Budget
+Kandy,Travelhubs Rooms,3340,Scored 9.3,Budget
+Galle,Yumis Place Galle,10885,N/A,Normal
+Galle,Chandani Hostel,3092,N/A,Budget
+Galle,Stayra Guest House,5566,N/A,Budget
+Galle,Aamy Luxury Villa,12369,N/A,Normal
+Galle,Nexus villa,13606,N/A,Normal
+Galle,Green Path Villa Unawatuna,49477,N/A,High Class
+Galle,BUKU BUKU by Bara Beach,11132,N/A,Normal
+Galle,Villa Kumudu,5937,N/A,Budget
+Galle,Galle Coastal Retreat,9895,N/A,Budget
+Galle,Padmaraga Galle Fort,47312,N/A,High Class
+Galle,Chatsworth Hill Villa,95737,N/A,High Class
+Galle,Green Haven Villa,9741,N/A,Budget
+Galle,Globe Fort Villa,8906,N/A,Budget
+Galle,Senhas Residencies,4948,N/A,Budget
+Galle,Villa Ceilaoo,18554,N/A,Normal
+Galle,Villa SOORYAALI,13915,N/A,Normal
+Galle,Leafy Loft,4948,Scored 10,Budget
+Galle,"Senhas Residencies, Galle City",5566,N/A,Budget
+Galle,Talpe Paradise,21646,Scored 6.7,High Class
+Galle,Hidden Galle Retreat,4898,N/A,Budget
+Galle,Villa Golden Bells,6494,N/A,Budget
+Galle,Home2dewata,5442,Scored 9.0,Budget
+Galle,Parrot Villa,8349,N/A,Budget
+Galle,GALLE HOLIDAY Inn,7731,N/A,Budget
+Galle,Shelter Beach House,8658,N/A,Budget
+Galle,KINGS BAY B&B - Galle,17935,N/A,Normal
+Galle,Cinnamon Grove Dadalla - AC Apartment,5257,Scored 9.0,Budget
+Galle,Villa Sun Grace,5464,Scored 10,Budget
+Galle,Villa Access Green,7422,N/A,Budget
+Galle,Villa Albino,7112,Scored 9.9,Budget
+Galle,"The Cozy Nest, Galle",7731,Scored 10,Budget
+Galle,Villa FIORA,7731,N/A,Budget
+Galle,Villa Nelith,20100,N/A,High Class
+Galle,Galle Breeze Villa,4638,Scored 10,Budget
+Galle,Villa Dewvin,7360,Scored 10,Budget
+Galle,Greendale Kalahe Unawatuna,8906,N/A,Budget
+Galle,Sajini homestay,2251,N/A,Budget
+Galle,Villa A,8349,N/A,Budget
+Galle,New Galle Light Villa,9648,N/A,Budget
+Galle,Ocean beach,5195,N/A,Budget
+Galle,Baba place villa,12369,N/A,Normal
+Galle,Balcony Breeze Homestay,5582,N/A,Budget
+Galle,Homestay in Galle,5257,N/A,Budget
+Galle,Unawatuna Heritage Villas,9741,N/A,Budget
+Trincomalee,Trinco Blu by Cinnamon,20224,Scored 8.6,High Class
+Trincomalee,Agnes Villa,8256,N/A,Budget
+Trincomalee,Sunrise Beach Villa,7731,N/A,Budget
+Trincomalee,Diving Nest,6185,N/A,Budget
+Trincomalee,RooLi Harbour Inn-Trincomalee,3340,N/A,Budget
+Trincomalee,Guru Guest House,6185,N/A,Budget
+Trincomalee,Sunrise Beach Villa Nilaveli,7731,N/A,Budget
+Trincomalee,Risha Villa,4994,N/A,Budget
+Trincomalee,OM Inn,2474,N/A,Budget
+Trincomalee,Blue Deer Villa,4329,Scored 9.0,Budget
+Trincomalee,Aven Guest House,2474,N/A,Budget
+Trincomalee,Euro Asian Rooms & Restaurant,3092,N/A,Budget
+Trincomalee,Beach cabin uppuveli,5875,N/A,Budget
+Trincomalee,Raam Villa uppuveli,11751,Scored 9.0,Normal
+Trincomalee,Vino lanka,5257,N/A,Budget
+Trincomalee,PAS Villa,16228,N/A,Normal
+Trincomalee,Trinco Beachfront Villas AJS,17812,Scored 10,Normal
+Trincomalee,Thats why beach hotel,15461,N/A,Normal
+Trincomalee,Dilithy Paradise,5875,Scored 10,Budget
+Trincomalee,Sayura Guest House,6494,N/A,Budget
+Trincomalee,T-Nova Guest House,4453,Scored 8.5,Budget
+Trincomalee,Wings Hotel & Hostel,4175,N/A,Budget
+Trincomalee,Nilaveli Royal Paradise,6679,Scored 9.7,Budget
+Trincomalee,AJ guest house,2474,Scored 8.0,Budget
+Trincomalee,APV Home,5257,N/A,Budget
+Trincomalee,Trinco Hybrid Comfort Inn,3943,Scored 7.0,Budget
+Trincomalee,Moon Guest House,31541,N/A,High Class
+Trincomalee,Trikon Villaa,2087,Scored 9.5,Budget
+Trincomalee,La PRINCE Hostel and hotel,1855,N/A,Budget
+Trincomalee,Royal Beach Hotel,7422,N/A,Budget
+Trincomalee,NM Rest House,7112,N/A,Budget
+Trincomalee,Aadhira Guest House,4329,Scored 10,Budget
+Trincomalee,Subra Luxury Rooms,7731,Scored 4.0,Budget
+Trincomalee,Aaraa beach house,19481,N/A,Normal
+Trincomalee,Canberra Resort & Beach Restaurant,9277,N/A,Budget
+Trincomalee,Nethu beach villa,3711,Scored 8.2,Budget
+Trincomalee,Yash ViLLA,6185,Scored 1.0,Budget
+Trincomalee,Bales GUEST HOUSE,10205,N/A,Normal
+Trincomalee,Dot's bey beach cabanas,6494,Scored 10,Budget
+Trincomalee,Trinco Salli Beach Resort,7422,Scored 8.0,Budget
+Trincomalee,Siva Villas,6185,Scored 10,Budget
+Trincomalee,JD rest Inn,4453,N/A,Budget
+Trincomalee,Rooms trincomalee,6185,N/A,Budget
+Trincomalee,Radiance Hotel,11800,Scored 9.2,Normal
+Trincomalee,TR Rest House,3711,Scored 9.0,Budget
+Trincomalee,trincomalee villa,22110,N/A,High Class
+Trincomalee,Tribal Village,13915,Scored 9.2,Normal
+Trincomalee,New Boganvilla,8040,N/A,Budget
+Trincomalee,Blue Horizon Apartments,9741,Scored 9.7,Budget
+Trincomalee,86 Villa Trincomalee,8040,N/A,Budget
+Trincomalee,Lovely Apartment in Siva Villas,20100,N/A,High Class
+Trincomalee,K Seven Guest Inn,3092,Scored 10,Budget
+Trincomalee,Akshaya Villa Trincomalee,3618,Scored 9.5,Budget
+Trincomalee,Day holiday villa,2783,Scored 9.5,Budget
+Trincomalee,J Rest in,12369,Scored 9.6,Normal
+Trincomalee,Preni Guest,4898,Scored 9.3,Budget
+Trincomalee,KDP House,9277,N/A,Budget
+Trincomalee,UK Lounge Resort,10492,Scored 9.3,Normal
+Trincomalee,Star Boad Ride,18554,N/A,Normal
+Trincomalee,RKM Hotel Uppuveli,8767,Scored 9.3,Budget
+Trincomalee,Mermaid Hostel,2165,Scored 9.4,Budget
+Trincomalee,Hasaranga Guest house,4948,N/A,Budget
+Trincomalee,Trinco Ashvi Family Guest,10823,Scored 9.7,Normal
+Trincomalee,Eastern Holiday Resort and Restaurant,5257,Scored 5.5,Budget
+Trincomalee,SS Villa,12988,Scored 10,Normal
+Trincomalee,Trinco Diyash Beach Hotel,7514,Scored 9.1,Budget
+Trincomalee,Sunbreeze Guest House,3711,Scored 9.2,Budget
+Trincomalee,Tiki Villa Nilaveli,43292,Scored 8.0,High Class
+Trincomalee,Pigeon island beach view villa nilaveli,23192,N/A,High Class
+Trincomalee,Ocean Villa,27831,N/A,High Class
+Trincomalee,Luxury Everest Hotel,8349,Scored 4.7,Budget
+Colombo,Trillium Boutique City Hotel,14538,Scored 7.6,Normal
+Colombo,Cinnamon Life at City of Dreams,45486,Scored 9.0,High Class
+Colombo,Marino Beach Colombo,26293,Scored 9.2,High Class
+Colombo,Granbell Hotel Colombo,29448,Scored 8.6,High Class
+Colombo,C 1 Colombo Fort,3551,Scored 8.1,Budget
+Colombo,Alma Boutique Hostel - Colombo,4640,Scored 9.1,Budget
+Colombo,Galle Face Terrace Hostel by Tourlux,3093,Scored 8.4,Budget
+Colombo,Ez Stay Guesthouse,5259,Scored 7.0,Budget
+Colombo,Golden Pier City Hotel,9357,Scored 7.5,Budget
+Colombo,Drop Inn Hostels,3322,Scored 8.6,Budget
+Colombo,Green Palace Colombo,5521,Scored 6.3,Budget
+Colombo,Galle Face Hotel,42996,Scored 8.5,High Class
+Colombo,Supun Arcade Residency,18102,Scored 7.6,Normal
+Colombo,Taprobane House,23014,Scored 9.1,High Class
+Colombo,Granny's House,20106,Scored 8.9,High Class
+Colombo,Hilton Colombo Residence,29711,Scored 8.3,High Class
+Colombo,Anugaa in The City,19689,Scored 9.5,Normal
+Colombo,Cinnamon Grand Colombo,34026,Scored 8.5,High Class
+Colombo,Cinnamon Lakeside,29386,Scored 8.2,High Class
+Colombo,Grand Oriental Hotel,10208,Scored 6.5,Normal
+Colombo,Seconds Hostel - Colombo,4340,Scored 8.3,Budget
+Colombo,Marine Bay Colombo,20106,Scored 8.3,High Class
+Colombo,"ITC Ratnadipa, a Luxury Collection Hotel, Colombo",47945,Scored 9.1,High Class
+Colombo,SeSaya Poshtel & Bistro - Colombo's Newest and Finest Poshtel Dorms and Rooms,3619,Scored 8.6,Budget
+Colombo,De Saram House by Geoffrey Bawa,51642,Scored 9.2,High Class
+Colombo,Sofia Colombo City Hotel,28452,Scored 8.7,High Class
+Colombo,"Colombo, Trizen Luxury Apartments, Sri Lanka",24746,Scored 8.9,High Class
+Colombo,Greenscape Colombo,10257,Scored 8.4,Normal
+Colombo,Cinnamon Red Colombo,27839,Scored 8.5,High Class
+Colombo,Fairway Colombo - Sri Lanka's First Hotel With Robot Technology,20415,Scored 8.4,High Class
+Colombo,"Havelock City Hostel, Colombo",2165,Scored 8.3,Budget
+Colombo,GSH Colombo,14848,Scored 7.3,Normal
+Colombo,Mirage Colombo,16598,Scored 7.7,Normal
+Colombo,Seilan,23803,Scored 9.4,High Class
+Colombo,Urban Deck,11136,Scored 7.5,Normal
+Colombo,The Kingsbury Colombo,31675,Scored 8.4,High Class
+Colombo,Pegasus Reef - A Beach Resort in Colombo,22927,Scored 7.8,High Class
+Colombo,Venue Colombo,12559,Scored 7.3,Normal
+Colombo,City Stay By Sunrise,19982,Scored 8.4,Normal
+Colombo,Thilhara Colombo,14254,Scored 7.8,Normal
+Colombo,Colombo Downtown Monkey Backpackers Hostel,3093,Scored 7.9,Budget
+Colombo,Marine Suites,18405,Scored 8.5,Normal
+Colombo,Shangri-La Colombo,47945,Scored 8.8,High Class
+Colombo,Lucky Wave Beach Resort,6805,Scored 7.6,Budget
+Colombo,MaRadha Colombo,21814,Scored 8.6,High Class
+Colombo,"Taj Samudra, Colombo",25365,Scored 8.4,High Class
+Colombo,Fern Colombo,9898,Scored 7.9,Budget
+Colombo,Saveira Colombo,9898,Scored 7.7,Budget
+Colombo,Motel VIP,8042,Scored 8.3,Budget
+Colombo,Villa Capers,14461,Scored 8.8,Normal
+Matara,Owen Villa,6185,N/A,Budget
+Matara,Hotel Saumya Polhena,7731,N/A,Budget
+Matara,Turtle Sea Polhena,6803,N/A,Budget
+Matara,333 Stays,6185,N/A,Budget
+Matara,Bright Nest Villa,12369,N/A,Normal
+Matara,Palm Haven Stay Polhena,13915,N/A,Normal
+Matara,Jungle Room,3340,N/A,Budget
+Matara,The Mud House,6958,N/A,Budget
+Matara,Brenley B Bungalow,3711,N/A,Budget
+Matara,Lotus villa,15833,N/A,Normal
+Matara,GRAND MERIDIAN RESIDENCEs,5257,N/A,Budget
+Matara,La Cove,9277,N/A,Budget
+Matara,Jayaweera Eco Resort,32469,N/A,High Class
+Matara,Uswatta,9895,N/A,Budget
+Matara,Moon House,5690,N/A,Budget
+Matara,Lushy Glorious Hotel,4638,Scored 10,Budget
+Matara,REEF VIEW Beach Hotel,12524,N/A,Normal
+Matara,Home mr,3711,N/A,Budget
+Matara,Chez Colette,18554,N/A,Normal
+Matara,Southern Crocodile - River Safari and on boat fish therapy in matara nilwala river,7112,N/A,Budget
+Matara,The Dwell,3711,Scored 10,Budget
+Matara,GMW Sanduni hotel & villa,7112,N/A,Budget
+Matara,Chamindu Villa Matara,15461,N/A,Normal
+Matara,Pilikann House Guest,3711,N/A,Budget
+Matara,The Fort Rest,4314,N/A,Budget
+Matara,Madiha Beach Resort,17008,N/A,Normal
+Matara,Sky Haven,8164,Scored 9.4,Budget
+Matara,Roo Ceylon Beach Villa,21028,N/A,High Class
+Matara,Ransilu,2165,N/A,Budget
+Matara,Sevana Villa,7344,Scored 10,Budget
+Matara,Paragon Villa,10205,Scored 9.4,Normal
+Matara,Mayura Beach Resort Matara,6185,Scored 8.0,Budget
+Matara,River Breeze Villa Thotamuna,4453,N/A,Budget
+Matara,Laksilu Holiday Inn,12369,N/A,Normal
+Matara,CalmStay Polhena,4638,N/A,Budget
+Matara,Suraji's Place,5257,N/A,Budget
+Matara,La casona,6463,N/A,Budget
+Matara,Oregano Mirissa,7820,N/A,Budget
+Matara,Sunrise Ridge Apartment and Villa,20100,N/A,High Class
+Matara,Chamika's Welcome Guest House,6123,N/A,Budget
+Matara,Matara Villa,15461,N/A,Normal
+Matara,PAPA Place,13915,N/A,Normal
+Matara,Liyos House,4824,N/A,Budget
+Matara,La Casona,6123,N/A,Budget
+Matara,Chathuranga Guest House,5937,N/A,Budget
+Matara,Home stray 7,4329,N/A,Budget
+Matara,Seth Villa Matara,6185,N/A,Budget
+Matara,chamika house,4948,Scored 7.0,Budget
+Matara,Cinnamon Crown,23501,N/A,High Class
+Matara,The Ocean Villa,15152,Scored 9.7,Normal
+Hambantota,Yala Savanna Leopard Lodge,21646,N/A,High Class
+Hambantota,Samren Rest,3711,Scored 9.5,Budget
+Hambantota,Sunset Villa,6417,Scored 5.5,Budget
+Hambantota,Nathali Inn & Restaurant,4700,N/A,Budget
+Hambantota,Nature Win Yala,14843,N/A,Normal
+Hambantota,RoseMary Villa,5257,Scored 7.0,Budget
+Hambantota,Sandalu Bungalows unit1,26285,Scored 1.0,High Class
+Hambantota,Kalametiya Lbis,7013,Scored 9.7,Budget
+Hambantota,Ella one day tour,28140,N/A,High Class
+Hambantota,Bundala Bird View,11132,Scored 10,Normal
+Hambantota,Yala Sappayama Campsite,3092,N/A,Budget
+Hambantota,Temuri Resort,22079,N/A,High Class
+Hambantota,Bundala Ruhunu maya Green cabana & Restaurant,27212,N/A,High Class
+Hambantota,Nagara Lake Glamping Resort,17317,Scored 9.1,Normal
+Hambantota,Beachfront Bliss Home Stay,24738,Scored 7.2,High Class
+Hambantota,Bundala Park Sanasuma Hotel,2783,Scored 8.0,Budget
+Hambantota,Ranna 212 by Auro Resorts,31309,Scored 8.7,High Class
+Hambantota,Hotel Blackstone,5566,Scored 8.6,Budget
+Hambantota,Malala Retreat,38963,Scored 9.1,High Class
+Hambantota,Sea Face Rest Hambantota,3092,Scored 8.2,Budget
+Hambantota,Vintara Eco Resort,24738,Scored 6.2,High Class
+Hambantota,The Bungalow Hambantota,9895,Scored 8.3,Budget
+Hambantota,Bundala Ruhunumaya Green villa,20038,Scored 10,High Class
+Hambantota,Hamba Hostel for Safari,2585,Scored 7.6,Budget
+Hambantota,Bundala Flamingo Cotteges,11132,Scored 8.9,Normal
+Hambantota,Duncan Murray Villa,2783,Scored 9.3,Budget
+Hambantota,Amawin Resort,7112,Scored 7.7,Budget
+Hambantota,The Oasis Beach Resort,23266,Scored 6.5,High Class
+Hambantota,Lagoon Inn,4020,Scored 8.6,Budget
+Hambantota,Jade Green Hotel Hambantota,18801,Scored 8.2,Normal
+Hambantota,Shangri-La Hambantota,57631,Scored 8.7,High Class
+Nuwara Eliya,Windsor Hotel,9277,Scored 7.4,Budget
+Nuwara Eliya,Craigbank Nuwaraeliya,33332,N/A,High Class
+Nuwara Eliya,Shenul Apartment Nuwara Eliya,20100,N/A,High Class
+Nuwara Eliya,Grand Sun Inn,7731,N/A,Budget
+Nuwara Eliya,Glendale Bungalow,7236,N/A,Budget
+Nuwara Eliya,Lake View Point Holiday Apartment Nuwara Eliya,21646,N/A,High Class
+Nuwara Eliya,Siloneeds homes,2165,N/A,Budget
+Nuwara Eliya,Siloneeds HOSTEL,1855,N/A,Budget
+Nuwara Eliya,Hillcroft Villa,4453,N/A,Budget
+Nuwara Eliya,Stone Heaven Villa,37108,N/A,High Class
+Nuwara Eliya,Bluefield cottage,6958,N/A,Budget
+Nuwara Eliya,Scottish Planter Bungalow- Thema Collection,32339,Scored 9.6,High Class
+Nuwara Eliya,Puremind cabin,3092,N/A,Budget
+Nuwara Eliya,New Vacation Villa,7174,N/A,Budget
+Nuwara Eliya,Blackpool Farm House,6185,N/A,Budget
+Nuwara Eliya,Marigold suite Nuwaraeliya,9277,N/A,Budget
+Nuwara Eliya,Pattipola snowflak rest,10823,N/A,Normal
+Nuwara Eliya,Shiny Cot,10050,N/A,Normal
+Nuwara Eliya,Hotel Athena,10823,N/A,Normal
+Nuwara Eliya,Silver Meir Villa,4329,N/A,Budget
+Nuwara Eliya,Funhill cottage,3092,N/A,Budget
+Nuwara Eliya,TERWANGUY Grand View,23192,N/A,High Class
+Nuwara Eliya,Dinu Rest,4496,N/A,Budget
+Nuwara Eliya,Ard Lui Residence,23192,N/A,High Class
+Nuwara Eliya,La rose cottage,4731,Scored 7.3,Budget
+Nuwara Eliya,Ru Hotel & Villa,12369,N/A,Normal
+Nuwara Eliya,Forests Heaven Villa,22265,N/A,High Class
+Nuwara Eliya,Kedella wood cabin,5597,N/A,Budget
+Nuwara Eliya,Sakun Villa Nuwaraeliya,18554,N/A,Normal
+Nuwara Eliya,La Cottage,15461,N/A,Normal
+Nuwara Eliya,"Villa Red Brick, Nuwara Eliya",18554,N/A,Normal
+Nuwara Eliya,Wooden Bliss Homestay,4175,N/A,Budget
+Nuwara Eliya,Hawen hiil villa,9277,N/A,Budget
+Nuwara Eliya,Mount view cottage,6803,Scored 10,Budget
+Nuwara Eliya,Verlinn,18554,N/A,Normal
+Nuwara Eliya,Dilru Inn - Home Stay,4082,Scored 9.0,Budget
+Nuwara Eliya,Highland hills lodge,6185,N/A,Budget
+Nuwara Eliya,Sampath Blue Heaven Inn Nuwara Eliya,3711,N/A,Budget
+Nuwara Eliya,Twinkle Cottage,5288,N/A,Budget
+Nuwara Eliya,Ivy Bungalow,13915,N/A,Normal
+Nuwara Eliya,Sakura Hotel,8968,Scored 8.5,Budget
+Nuwara Eliya,Redwood inn homestay,3402,Scored 10,Budget
+Nuwara Eliya,Rooms for Rent,20100,N/A,High Class
+Nuwara Eliya,Tea Junction Home Stay,5566,N/A,Budget
+Nuwara Eliya,The Calm Hotel,18554,Scored 9.1,Normal
+Nuwara Eliya,26 Loversleap Cottage,12369,N/A,Normal
+Ella,Lina Eco Cottage - Ella,9091,Scored 8.9,Budget
+Ella,Loop Side Cabin,27212,N/A,High Class
+Ella,Cinnamon River Cabana,64320,N/A,High Class
+Ella,Browns Hill Villa - Ella,7422,N/A,Budget
+Ella,Ella Mandakin Hotel,15585,N/A,Normal
+Ella,Ella Login Hotel,5442,N/A,Budget
+Ella,The Misty Heaven,12524,N/A,Normal
+Ella,Ella 96 TN Resort,13915,N/A,Normal
+Ella,Solara Cabin Ella,12023,N/A,Normal
+Ella,Sylvan Crest Ella,9895,N/A,Budget
+Ella,Ella RESTQ,4054,N/A,Budget
+Ella,Ruby Rock Ella,4638,Scored 10,Budget
+Ella,The Blue Crest -Ella,4329,N/A,Budget
+Ella,Slon Ella,21646,Scored 10,High Class
+Ella,Paddy Breeze Cabana Ella,17008,Scored 10,Normal
+Ella,Blue Hills Ella,13853,N/A,Normal
+Ella,Oasis Peak Ella,9895,Scored 8.7,Budget
+Ella,Winking nature view,8040,N/A,Budget
+Ella,oasis,7731,N/A,Budget
+Ella,Next Level Ella,37108,Scored 9.2,High Class
+Ella,Ella Little Heaven guest,6958,Scored 2.0,Budget
+Ella,Hotel Budget 1st,13606,N/A,Normal
+Ella,Ayana Gardens Ella,13915,Scored 10,Normal
+Ella,Ella 50 Stay,6185,Scored 10,Budget
+Ella,Crown Valley Hotel Ella,2319,Scored 10,Budget
+Ella,Bethel Ella,30614,Scored 9.6,High Class
+Ella,Ninearch Golden Cabana,18090,N/A,Normal
+Ella,Sun Top Grand,33397,Scored 10,High Class
+Ella,Clarity House Ella,2628,Scored 8.8,Budget
+Ella,Radiance Ella Urban Camping,17317,N/A,Normal
+Ella,The Bunker Hostel Ella,11132,Scored 10,Normal
+Ella,Pine Stay Ella,5916,Scored 10,Budget
+Ella,Ella V8 Villa,7230,N/A,Budget
+Ella,Ella Tea Leaf Heaven,9741,Scored 10,Budget
+Ella,AnuBi Nest Ella,16698,N/A,Normal
+Ella,Ella Tea Mountain,8658,Scored 9.5,Budget
+Ella,Urban Halo,15152,N/A,Normal
+Ella,Ella Velvet Stay,14456,N/A,Normal
+Ella,Ayu Ella,9184,Scored 10,Budget
+Ella,Meadow Villa - Ella,20873,Scored 10,High Class
+Ella,Elegant Ella Cabana,30923,N/A,High Class
+Ella,Newburgh Ella - The Tea Factory Resort,101582,Scored 7.0,High Class
+Ella,Happy Rest House Ella,6185,Scored 10,Budget
+Ella,Ayana Gardens - Ella,40324,N/A,High Class
+Ella,Villa Green Hotel,18554,Scored 10,Normal
+Ella,The Bunker Ella,6185,N/A,Budget
+Ella,MAYURA Ella,27831,N/A,High Class
+Ella,Sehandi Hotels - Renaissance Ella,20873,N/A,High Class
+Ella,Lumora Hills Ella,6512,Scored 9.9,Budget
+Ella,Ella Dreams net,13915,N/A,Normal
+Ella,Fogy Ella Hotel,8411,N/A,Budget
+Ella,Majestic Wood Cabin,19147,N/A,Normal
+Ella,Bird Park Villa Ella,9277,N/A,Budget
+Ella,Rango Holiday Home Ella,8040,N/A,Budget
+Ella,Mount Breeze,10514,Scored 8.3,Normal
+Ella,Blissbarn Inn Ella,8658,Scored 10,Budget
+Ella,Elysium Homestay Ella,7499,Scored 9.8,Budget
+Ella,Delightfull Surrounding Ella,8386,Scored 9.4,Budget
+Ella,Sisila villa ella,6185,N/A,Budget
+Ella,Ella White Tea Garden Hotel,19791,Scored 9.8,Normal
+Ella,A2 Family Cabana Ella,11132,N/A,Normal
+Ella,Luna Dream Ella,7422,Scored 9.0,Budget
+Ella,Morning Glow Ella,5412,N/A,Budget
+Ella,Bluebell Cottage,5269,Scored 10,Budget
+Ella,Ella 78 Resort,5798,Scored 9.7,Budget
+Ella,Monaara Leisure - Ella,24738,Scored 9.5,High Class
+Ella,Forest Edge Villa,11132,Scored 9.6,Normal
+Ella,Inn of Dreams,4994,N/A,Budget
+Ella,Dark Angel View,11132,Scored 7.9,Normal
+Ella,Serene Space Ella,9895,Scored 10,Budget
+Ella,River side geust house,4669,N/A,Budget
+Ella,Hike & Stay Ella,10019,Scored 9.8,Normal
+Ella,MaWilora Homestay Ella,6803,Scored 9.8,Budget
+Anuradhapura,Saji-Sami Hotel,14472,N/A,Normal
+Anuradhapura,Gagana Resort,15774,N/A,Normal
+Anuradhapura,Serene Lake View Resort,21646,N/A,High Class
+Anuradhapura,Gimanhala Thisawewa,10823,N/A,Normal
+Anuradhapura,GSD Eco Homestay,4948,N/A,Budget
+Anuradhapura,Resort Black Rose,2721,N/A,Budget
+Anuradhapura,Forest calm stay,6185,N/A,Budget
+Anuradhapura,Diyoli Holiday Home,8040,N/A,Budget
+Anuradhapura,Green Lotus Family Resorts,5102,N/A,Budget
+Anuradhapura,Sanda Ruwan Giri Vishwa Shanthi,4638,N/A,Budget
+Anuradhapura,Hiru Holiday Home Anuradhapura,10823,N/A,Normal
+Anuradhapura,Trump House Anuradhapura,12369,N/A,Normal
+Anuradhapura,Blue Moon villa,7422,N/A,Budget
+Anuradhapura,Nimjaya holiday bunglow,4113,Scored 10,Budget
+Anuradhapura,Mindana Residence,9184,Scored 8.3,Budget
+Anuradhapura,Wasana guest,3958,N/A,Budget
+Anuradhapura,Chanwey Resort,4020,N/A,Budget
+Anuradhapura,Wijaya Garden Hotel,10576,Scored 10,Normal
+Anuradhapura,Gonawala Resort,10823,N/A,Normal
+Anuradhapura,Heaven Villa Anuradhapura,17264,N/A,Normal
+Anuradhapura,Myla Lodge,15075,Scored 10,Normal
+Anuradhapura,Agasthi Leisure Resort,5489,Scored 10,Budget
+Anuradhapura,North Lake Villa,8658,N/A,Budget
+Anuradhapura,Saga Homestay,7916,Scored 10,Budget
+Anuradhapura,Moonlight Resort,4020,Scored 7.0,Budget
+Anuradhapura,Sobavasee Holiday Resort,10514,N/A,Normal
+Anuradhapura,A3 Villa Anuradhapura,11132,N/A,Normal
+Anuradhapura,Lake breeze family resort,3618,N/A,Budget
+Anuradhapura,4th Mile Resort,3402,N/A,Budget
+Anuradhapura,Peaceful City Escape with 2 Brand new Bedrooms for Rent,6061,N/A,Budget
+Anuradhapura,Green Sapphire Home Stay,2700,N/A,Budget
+Anuradhapura,Cloud Nine Villa,9277,Scored 9.2,Budget
+Anuradhapura,Danidu City Holiday Home,8829,N/A,Budget
+Anuradhapura,Nathalie villa,3773,Scored 10,Budget
+Anuradhapura,Lakeside Garden Cottages - Anuradhapura,10143,Scored 10,Normal
+Anuradhapura,Reluxmee Hotel Anuradapura,5628,Scored 8.2,Budget
+Anuradhapura,thera lake resort,4175,Scored 8.0,Budget
+Anuradhapura,Indrani City Inn,6494,N/A,Budget
+Anuradhapura,CALMORA Home Stay,3092,Scored 9.7,Budget
+Anuradhapura,GOLD NIGHT resort,4453,N/A,Budget
+Anuradhapura,Methvidu Homestay,4638,N/A,Budget
+Anuradhapura,Meera House & Tourist Inn,2783,Scored 8.2,Budget
+Anuradhapura,Little House Inn Anuradhapura,2783,Scored 8.7,Budget
+Anuradhapura,BINU'S Serene Cottage,6185,N/A,Budget
+Anuradhapura,Solo escape,1546,Scored 5.7,Budget
+Anuradhapura,The Farm Cottage - Anuradhapura,4638,N/A,Budget
+Anuradhapura,White Rose Holiday Resort,2628,Scored 8.5,Budget
+Anuradhapura,Walawwa Heritage,9277,N/A,Budget
+Anuradhapura,Dreamy Homestay,8272,Scored 10,Budget
+Anuradhapura,Forest Rock Garden Resort,80400,Scored 1.0,High Class
+Anuradhapura,madurasinghe villa,6185,Scored 7.5,Budget
+Anuradhapura,Royal blue holiday home Anuradhapura,6185,N/A,Budget
+Anuradhapura,Nature's Touch Villa,4638,Scored 10,Budget
+Anuradhapura,Nil Manel Tourist,5257,Scored 9.5,Budget
+Anuradhapura,Wandana Holiday Home,5566,N/A,Budget
+Anuradhapura,New PAWANA HOTEL,3340,Scored 1.0,Budget
+Anuradhapura,Lavonka Tourist Guest,4948,Scored 1.0,Budget
+Anuradhapura,Thula vila,4468,N/A,Budget
+Anuradhapura,Ceylan Lodge Anuradhapura,11132,Scored 5.5,Normal
+Anuradhapura,Aqua Line,5257,Scored 10,Budget
+Anuradhapura,Divulgaha Gedara Boutique Hotel,16327,Scored 9.1,Normal
+Anuradhapura,Two77 Residence,5566,N/A,Budget
+Anuradhapura,Dhuli Family Resort,7731,N/A,Budget
+Anuradhapura,Kings Town Hotel Anuradhapura,24429,N/A,High Class
+Anuradhapura,Theon J Resort,5875,N/A,Budget
+Anuradhapura,සදෙව් Villa,3627,Scored 10,Budget
+Anuradhapura,Nishi Holiday Home,3711,N/A,Budget
+Anuradhapura,Ovinro rest - Anuradhapura,2554,N/A,Budget
+Anuradhapura,Kushan Homestay,3711,N/A,Budget
+Anuradhapura,Dewdula villa,2474,Scored 8.0,Budget
+Anuradhapura,Hely`s Happy Villa,2474,N/A,Budget
+Anuradhapura,VILLA-X by VETERANS,11132,Scored 10,Normal
+Anuradhapura,Grandmila Resort,4601,Scored 10,Budget
+Polonnaruwa,Ceylora Grand Polonnaruwa,7422,N/A,Budget
+Polonnaruwa,Dilshan Tourist Stay,3711,Scored 10,Budget
+Polonnaruwa,Shalom Hotel,8813,N/A,Budget
+Polonnaruwa,The Heritage Hotel,4716,N/A,Budget
+Polonnaruwa,Lakshani Villa,6494,Scored 9.0,Budget
+Polonnaruwa,Hotel Pulathisi Arana,4638,N/A,Budget
+Polonnaruwa,Binuri Holiday Home,7731,N/A,Budget
+Polonnaruwa,Pure Taste,3742,N/A,Budget
+Polonnaruwa,Angammedilla resort,9741,N/A,Budget
+Polonnaruwa,In the Wild by RoamCeylon,5640,Scored 9.0,Budget
+Polonnaruwa,ANGAMMEDILLA resort,10390,N/A,Normal
+Polonnaruwa,Brampy Guest,6185,Scored 9.7,Budget
+Polonnaruwa,Suja Holiday Niche,1546,Scored 9.4,Budget
+Polonnaruwa,Vilage Home,6856,Scored 1.0,Budget
+Polonnaruwa,Punkalasa Natural Park,4592,N/A,Budget
+Polonnaruwa,Keth Sisila Guest House,3785,N/A,Budget
+Polonnaruwa,River edge eco farm & villa,8173,N/A,Budget
+Polonnaruwa,Sunrise Lake Resort,15140,Scored 9.7,Normal
+Polonnaruwa,Kingsland Tourist Home,2783,Scored 9.3,Budget
+Polonnaruwa,Aura Home House Hostel,1546,N/A,Budget
+Polonnaruwa,Castello Hotel,6185,Scored 7.0,Budget
+Polonnaruwa,TB Guest House,2598,N/A,Budget
+Polonnaruwa,Nature park hotel,7731,Scored 8.0,Budget
+Polonnaruwa,Alahakoon Guest house,2010,Scored 10,Budget
+Polonnaruwa,The Lavish Polonnaruwa,3299,Scored 9.3,Budget
+Polonnaruwa,ISARA Guest,5687,Scored 9.3,Budget
+Polonnaruwa,The New Canel Park Hotel,5010,Scored 1.0,Budget
+Polonnaruwa,White Shine Hotel,3711,Scored 9.0,Budget
+Polonnaruwa,Arcadiaa Villa,5010,N/A,Budget
+Polonnaruwa,The Silva Guest,2226,Scored 4.0,Budget
+Polonnaruwa,"Ceyted Cottage, Polonnaruwa",5566,Scored 10,Budget
+Polonnaruwa,The Green Guest House,3547,N/A,Budget
+Polonnaruwa,Greenfield Haven,5257,Scored 9.5,Budget
+Polonnaruwa,Nature Paradise,4175,N/A,Budget
+Polonnaruwa,Hotel Fiori Paradise,2783,Scored 7.4,Budget
+Polonnaruwa,Alimankada Resort and restaurant,4638,Scored 10,Budget
+Polonnaruwa,Janapriya Lake Resort,6958,Scored 7.0,Budget
+Polonnaruwa,Jungle View Guest,2165,Scored 8.3,Budget
+Polonnaruwa,Hotel Ranketha,6185,N/A,Budget
+Polonnaruwa,Rice Villa Retreat,8767,Scored 1.0,Budget
+Polonnaruwa,Lake Edge Hotel Polonnaruwa,2474,N/A,Budget
+Polonnaruwa,Avendra Grand,3154,N/A,Budget
+Polonnaruwa,HOTEL Pearl White Residency,7814,Scored 9.9,Budget
+Polonnaruwa,Aruna homestay,5721,Scored 9.5,Budget
+Polonnaruwa,Dream View Hotel,6123,N/A,Budget
+Polonnaruwa,Lakes Edge Resart,3729,N/A,Budget
+Polonnaruwa,Ancient Village,4175,Scored 8.0,Budget
+Polonnaruwa,Sahan Tourist House,4948,Scored 9.4,Budget
+Polonnaruwa,Hotel Sanjana & Restaurant,9277,Scored 9.8,Budget
+Polonnaruwa,Sisila Guest House,4342,N/A,Budget
+Polonnaruwa,Sunshine Guest House,2492,Scored 8.2,Budget
+Polonnaruwa,Hotel Sanhida Polonnaruwa,4948,Scored 8.5,Budget
+Polonnaruwa,SENN Homestay,2783,N/A,Budget
+Polonnaruwa,R & D Resort,4407,Scored 8.8,Budget
+Polonnaruwa,New Gama Guest,1855,Scored 10,Budget
+Polonnaruwa,Senanayaka Holiday Inn,4948,Scored 9.4,Budget
+Polonnaruwa,Hotel Lake Park,23192,Scored 8.5,High Class
+Polonnaruwa,Windy Villa,6927,Scored 9.3,Budget
+Polonnaruwa,Gami Gedara Homestay,6185,Scored 9.5,Budget
+Polonnaruwa,Nature Resort,8349,Scored 9.9,Budget
+Polonnaruwa,Heritage Villa Polonnaruwa,4948,Scored 6.5,Budget
+Polonnaruwa,Hotel Anaulundawa,6185,Scored 7.2,Budget
+Polonnaruwa,PEREGRINE Villa,5566,Scored 8.1,Budget
+Polonnaruwa,Thambara Resort,2591,Scored 8.2,Budget
+Polonnaruwa,Aura Villa,6958,Scored 9.0,Budget
+Polonnaruwa,Deer Garden Guest,3510,Scored 8.0,Budget
+Polonnaruwa,Thanumi Polonnaruwa,2672,Scored 7.9,Budget
+Polonnaruwa,Hotel Summer Haven,10823,Scored 8.0,Normal
+Polonnaruwa,Monarch Residence,9277,Scored 9.0,Budget
+Polonnaruwa,ARANI HOMESTAY,5566,Scored 8.5,Budget
+Polonnaruwa,Geethani Tourist Home Polonnaruwa,5993,Scored 9.1,Budget
+Polonnaruwa,Agbo Hotel,17008,Scored 8.6,Normal
