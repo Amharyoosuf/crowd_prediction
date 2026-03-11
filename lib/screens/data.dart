@@ -46,93 +46,91 @@ final List<Map<String, dynamic>> naturePlaces = [
 final List<Map<String, dynamic>> adventurePlaces = [
   {
     'name': 'Kitulgala White Water Rafting',
-    'image': 'https://cdn.pixabay.com/photo/2017/07/28/19/57/rafting-2549682_1280.jpg',
+    'image': 'assets/images/kitulgala_rafting.jpg',
     'lat': 6.8940,
     'lng': 80.3685
   },
   {
     'name': 'Arugam Bay (Surfing)',
-    'image': 'https://cdn.pixabay.com/photo/2016/03/27/20/29/arugam-bay-1281445_1280.jpg',
+    'image': 'assets/images/arugam_bay_surf.jpg',
     'lat': 6.8423,
     'lng': 81.7015
   },
   {
     'name': 'Haputale Hiking',
-    'image': 'https://cdn.pixabay.com/photo/2018/07/18/19/46/haputale-3544016_1280.jpg',
+    'image': 'assets/images/haputale_hiking.jpg',
     'lat': 6.7407,
     'lng': 80.9934
   },
   {
     'name': 'Hot Air Ballooning (Dambulla)',
-    'image': 'https://cdn.pixabay.com/photo/2018/01/03/08/42/balloon-3052121_1280.jpg',
+    'image': 'assets/images/dambulla_balloon.jpg',
     'lat': 7.8738,
     'lng': 80.6523
   },
   {
     'name': 'Safari in Yala National Park',
-    'image': 'https://cdn.pixabay.com/photo/2017/01/23/17/33/yala-2006961_1280.jpg',
+    'image': 'assets/images/yala_safari.jpg',
     'lat': 6.3610,
     'lng': 81.5490
   },
   {
     'name': 'Ravana Falls (Ella)',
-    'image': 'https://cdn.pixabay.com/photo/2018/07/28/08/59/ravana-falls-3560138_1280.jpg',
+    'image': 'assets/images/ravana_falls.jpg',
     'lat': 6.8720,
     'lng': 81.0560
   },
   {
     'name': 'Minneriya Wildlife Safari',
-    'image': 'https://cdn.pixabay.com/photo/2017/10/10/21/54/elephant-2838465_1280.jpg',
+    'image': 'assets/images/minneriya_safari.jpg',
     'lat': 8.3500,
     'lng': 80.8780
   },
 ];
-
 final List<Map<String, dynamic>> historicalPlaces = [
   {
     'name': 'Sigiriya Rock Fortress',
-    'image': 'https://cdn.pixabay.com/photo/2015/06/19/21/24/sigiriya-815137_1280.jpg',
+    'image': 'assets/images/sigiriya.jpg',
     'lat': 7.9541,
     'lng': 80.7547
   },
   {
     'name': 'Polonnaruwa Ancient City',
-    'image': 'https://cdn.pixabay.com/photo/2016/03/28/00/13/polonnaruwa-1284270_1280.jpg',
+    'image': 'assets/images/polonnaruwa.jpg',
     'lat': 7.9340,
     'lng': 81.0000
   },
   {
     'name': 'Anuradhapura Ancient City',
-    'image': 'https://cdn.pixabay.com/photo/2016/11/29/09/12/anuradhapura-1869395_1280.jpg',
+    'image': 'assets/images/anuradhapura.jpg',
     'lat': 8.3114,
     'lng': 80.4037
   },
   {
     'name': 'Dambulla Cave Temple',
-    'image': 'https://cdn.pixabay.com/photo/2017/03/16/16/10/dambulla-2158032_1280.jpg',
+    'image': 'assets/images/dambulla_temple.jpg',
     'lat': 7.8562,
     'lng': 80.6515
   },
   {
     'name': 'Temple of Tooth (Kandy)',
-    'image': 'https://cdn.pixabay.com/photo/2018/01/14/10/37/kandy-3087190_1280.jpg',
+    'image': 'assets/images/kandy_tooth.jpg',
     'lat': 7.2906,
     'lng': 80.6400
   },
   {
     'name': 'Galle Fort',
-    'image': 'https://cdn.pixabay.com/photo/2016/12/06/18/27/galle-1881935_1280.jpg',
+    'image': 'assets/images/galle_fort.jpg',
     'lat': 6.0270,
     'lng': 80.2170
   },
   {
     'name': 'Jaffna Fort',
-    'image': 'https://cdn.pixabay.com/photo/2016/11/18/16/04/jaffna-1836423_1280.jpg',
+    'image': 'assets/images/jaffna_fort.jpg',
     'lat': 9.6667,
     'lng': 80.0000
   },
 ];
-
 final List<Map<String, dynamic>> beachPlaces = [
   {
     'name': 'Unawatuna Beach',
