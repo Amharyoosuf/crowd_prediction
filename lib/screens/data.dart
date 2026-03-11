@@ -1,43 +1,43 @@
 final List<Map<String, dynamic>> naturePlaces = [
   {
     'name': 'Horton Plains National Park',
-    'image': 'https://cdn.pixabay.com/photo/2018/07/06/21/19/horton-3524680_1280.jpg',
+    'image': 'assets/images/horton_plains.jpeg',
     'lat': 6.8163,
     'lng': 80.7882
   },
   {
     'name': 'Knuckles Mountain Range',
-    'image': 'https://cdn.pixabay.com/photo/2018/03/11/23/15/knuckles-3212276_1280.jpg',
+    'image': 'assets/images/explore/adams_peak.jpg',
     'lat': 7.3751,
     'lng': 80.6790
   },
   {
     'name': 'Pidurutalagala (Highest Peak)',
-    'image': 'https://cdn.pixabay.com/photo/2017/09/10/19/03/nuwara-eliya-2732136_1280.jpg',
+    'image': 'assets/images/explore/pidurutalagala.jpg',
     'lat': 7.0008,
     'lng': 80.7739
   },
   {
     'name': 'Adam\'s Peak (Sri Pada)',
-    'image': 'https://cdn.pixabay.com/photo/2016/02/19/11/53/adams-peak-1209958_1280.jpg',
+    'image': 'assets/images/explore/adams_peak.jpg',
     'lat': 6.8068,
     'lng': 80.4932
   },
   {
     'name': 'Sinharaja Forest Reserve',
-    'image': 'https://cdn.pixabay.com/photo/2018/01/07/10/23/sinharaja-3068982_1280.jpg',
+    'image': 'assets/images/explore/sinharaja.jpg',
     'lat': 6.3436,
     'lng': 80.4991
   },
   {
     'name': 'Ella Rock',
-    'image': 'https://cdn.pixabay.com/photo/2019/01/12/14/29/ella-3927815_1280.jpg',
+    'image': 'assets/images/explore/ella_rock.jpg',
     'lat': 6.8700,
     'lng': 81.0470
   },
   {
     'name': 'Dunhinda Falls',
-    'image': 'https://cdn.pixabay.com/photo/2016/07/23/10/52/dunhinda-falls-1534878_1280.jpg',
+    'image': 'assets/images/explore/dunhinda_falls.jpg',
     'lat': 6.9920,
     'lng': 81.0530
   },

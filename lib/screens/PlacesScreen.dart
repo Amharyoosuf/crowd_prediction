@@ -43,7 +43,7 @@ class PlacesScreen extends StatelessWidget {
                 ClipRRect(
                   borderRadius:
                   const BorderRadius.vertical(top: Radius.circular(10)),
-                  child: Image.network(
+                  child: Image.asset(
                     place['image'],
                     height: 200,
                     width: double.infinity,
