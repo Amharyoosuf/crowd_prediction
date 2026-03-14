@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../screens/home_screen.dart';
 import '../screens/explore_screen.dart';
 import '../screens/budget_prediction_screen.dart';
+import '../screens/login screens/profile_screen.dart';
 import '../screens/emergency_screen.dart';
 
 class BottomNav extends StatefulWidget {
@@ -18,7 +19,8 @@ class _BottomNavState extends State<BottomNav> {
     HomeScreen(),
     BudgetPredictionScreen(),
     ExploreScreen(),
-    EmergencyScreen(),
+    ProfileScreen()
+    ,
   ];
 
   @override
@@ -49,8 +51,8 @@ class _BottomNavState extends State<BottomNav> {
             label: 'Explore',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.warning),
-            label: 'Emergency',
+            icon: Icon(Icons.account_circle),
+            label: 'Profile',
           ),
         ],
       ),
