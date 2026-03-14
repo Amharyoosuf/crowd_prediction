@@ -19,6 +19,7 @@ class DiningModel {
 
   factory DiningModel.fromCsv(List<dynamic> row) {
     return DiningModel(
+
       district: row[0]?.toString() ?? '',
       restaurantName: row[1]?.toString() ?? '',
       travelClass: row[2]?.toString() ?? '',
@@ -26,6 +27,7 @@ class DiningModel {
       approxRangeLkr: row[4]?.toString() ?? '',
       bestTime: row[5]?.toString() ?? '',
       timeCategory: row[6]?.toString() ?? '',
+
     );
   }
 }
