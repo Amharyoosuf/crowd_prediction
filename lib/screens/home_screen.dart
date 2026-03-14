@@ -3,6 +3,7 @@ import '../widgets/floating_mic.dart';
 import 'event_calendar_screen.dart';
 import 'predict_crowd_level.dart';
 import 'budget_prediction_screen.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -12,7 +13,15 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Travelstatics"),
-        backgroundColor: Colors.deepPurple, // Optional: make it colorful
+        backgroundColor: Colors.deepPurple,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.logout),
+            onPressed: () async {
+              await Supabase.instance.client.auth.signOut();
+            },
+          ),
+        ],// Optional: make it colorful
       ),
       body: Stack(
         children: [
