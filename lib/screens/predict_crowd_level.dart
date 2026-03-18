@@ -1,6 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../models/prediction_response.dart';
 import '../services/api_service.dart';
+
+class PlaceLocation {
+  final double lat;
+  final double lng;
+
+  const PlaceLocation({
+    required this.lat,
+    required this.lng,
+  });
+}
 
 class PredictCrowdLevelScreen extends StatefulWidget {
   const PredictCrowdLevelScreen({super.key});
@@ -92,6 +103,8 @@ class _PredictCrowdLevelScreenState extends State<PredictCrowdLevelScreen> {
     'Kalpitiya Beach',
   ];
 
+
+
   bool isLoading = false;
   PredictionResponse? result;
   String? errorMessage;
@@ -124,6 +137,32 @@ class _PredictCrowdLevelScreenState extends State<PredictCrowdLevelScreen> {
       setState(() {
         isLoading = false;
       });
+    }
+  }
+
+  Future<void> openGoogleMaps(String placeName) async {
+    final encodedPlace = Uri.encodeComponent(placeName);
+
+    final Uri googleMapsUrl = Uri.parse(
+      'https://www.google.com/maps/search/?api=1&query=$encodedPlace',
+    );
+
+    try {
+      final launched = await launchUrl(
+        googleMapsUrl,
+        mode: LaunchMode.externalApplication,
+      );
+
+      if (!launched && mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Could not open Google Maps')),
+        );
+      }
+    } catch (e) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error opening map: $e')),
+      );
     }
   }
 
@@ -187,7 +226,7 @@ class _PredictCrowdLevelScreenState extends State<PredictCrowdLevelScreen> {
           ),
           SizedBox(height: 8),
           Text(
-            'Predict tourism crowd levels for your selected destination.',
+            'Predictions are made by ML models. Please do not rely on it 100%.',
             style: TextStyle(
               color: Colors.white70,
               fontSize: 15,
@@ -796,6 +835,23 @@ class _PredictCrowdLevelScreenState extends State<PredictCrowdLevelScreen> {
                     icon: Icons.thermostat_rounded,
                     label: 'Temperature: ${alt.temperature}',
                     fullWidth: true,
+                  ),
+                  const SizedBox(height: 12),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton.icon(
+                      onPressed: () => openGoogleMaps(alt.place),
+                      icon: const Icon(Icons.navigation_rounded),
+                      label: const Text('Navigate with Google Maps'),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xFF1565C0),
+                        foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(14),
+                        ),
+                      ),
+                    ),
                   ),
                 ],
               ),

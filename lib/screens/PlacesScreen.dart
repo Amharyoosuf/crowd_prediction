@@ -7,20 +7,24 @@ class PlacesScreen extends StatelessWidget {
 
   const PlacesScreen({super.key, required this.title, required this.places});
 
-  // Function to open Google Maps
-  Future<void> _openMaps(double lat, double lng) async {
-    final geoUrl = Uri.parse('geo:$lat,$lng?q=$lat,$lng');
-    if (await canLaunchUrl(geoUrl)) {
-      await launchUrl(geoUrl, mode: LaunchMode.externalApplication);
-    } else {
-      // Fallback to browser
-      final browserUrl = Uri.parse(
-          'https://www.google.com/maps/dir/?api=1&destination=$lat,$lng');
-      if (await canLaunchUrl(browserUrl)) {
-        await launchUrl(browserUrl, mode: LaunchMode.externalApplication);
-      } else {
-        print('Could not open Google Maps');
+  Future<void> _openMaps(String placeName) async {
+    final encodedPlace = Uri.encodeComponent(placeName);
+
+    final googleMapsUrl = Uri.parse(
+      'https://www.google.com/maps/search/?api=1&query=$encodedPlace',
+    );
+
+    try {
+      final launched = await launchUrl(
+        googleMapsUrl,
+        mode: LaunchMode.externalApplication,
+      );
+
+      if (!launched) {
+        debugPrint('Could not open Google Maps');
       }
+    } catch (e) {
+      debugPrint('Error opening Google Maps: $e');
     }
   }
 
@@ -59,12 +63,14 @@ class PlacesScreen extends StatelessWidget {
                         child: Text(
                           place['name'],
                           style: const TextStyle(
-                              fontSize: 18, fontWeight: FontWeight.bold),
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                       ElevatedButton.icon(
                         onPressed: () async {
-                          await _openMaps(place['lat'], place['lng']);
+                          await _openMaps(place['name']);
                         },
                         icon: const Icon(Icons.navigation),
                         label: const Text('Navigate'),

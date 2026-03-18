@@ -1,6 +1,7 @@
+import 'package:final_year/screens/Event_calender_sup.dart';
 import 'package:flutter/material.dart';
 import '../widgets/floating_mic.dart';
-import 'event_calendar_screen.dart';
+
 import 'predict_crowd_level.dart';
 import 'budget_prediction_screen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -57,22 +58,23 @@ class HomeScreen extends StatelessWidget {
                     );
                   },
                 ),
+
                 const SizedBox(height: 20),
                 const SizedBox(height: 20),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(200, 50),
                   ),
-                  child: const Text("Event Calendar"),
+                  child: const Text("Event Calendar Superbase"),
                   onPressed: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (_) => const EventCalendarScreen(),
+                        builder: (_) => const EventCalendarScreenW(),
                       ),
                     );
                   },
-                ),
+                )
               ],
             ),
           ),
