@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'PlacesScreen.dart';
 import 'data.dart';
+import '../services/favorites_manager.dart';
 
 class ExploreScreen extends StatelessWidget {
   const ExploreScreen({super.key});
@@ -46,8 +47,6 @@ class ExploreScreen extends StatelessWidget {
       body: SafeArea(
         child: CustomScrollView(
           slivers: [
-
-            /// Title section
             SliverToBoxAdapter(
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(20, 20, 20, 10),
@@ -69,12 +68,151 @@ class ExploreScreen extends StatelessWidget {
                         color: Colors.grey[600],
                       ),
                     ),
+                    const SizedBox(height: 20),
+
+                    const Text(
+                      'Saved Places',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.deepPurple,
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+
+                    ValueListenableBuilder<List<Map<String, dynamic>>>(
+                      valueListenable: FavoritesManager.favorites,
+                      builder: (context, favorites, _) {
+                        if (favorites.isEmpty) {
+                          return Container(
+                            width: double.infinity,
+                            padding: const EdgeInsets.all(16),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(18),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black.withOpacity(0.05),
+                                  blurRadius: 8,
+                                  offset: const Offset(0, 4),
+                                ),
+                              ],
+                            ),
+                            child: const Text(
+                              'No saved places yet. Tap the bookmark icon in Places screen.',
+                              style: TextStyle(fontSize: 14),
+                            ),
+                          );
+                        }
+
+                        return SizedBox(
+                          height: 210,
+                          child: ListView.separated(
+                            scrollDirection: Axis.horizontal,
+                            itemCount: favorites.length,
+                            separatorBuilder: (_, __) =>
+                            const SizedBox(width: 14),
+                            itemBuilder: (context, index) {
+                              final place = favorites[index];
+
+                              return GestureDetector(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (_) => PlacesScreen(
+                                        title: 'Saved Places',
+                                        places: favorites,
+                                      ),
+                                    ),
+                                  );
+                                },
+                                child: Container(
+                                  width: 170,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(20),
+                                    color: Colors.white,
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.black.withOpacity(0.06),
+                                        blurRadius: 12,
+                                        offset: const Offset(0, 5),
+                                      ),
+                                    ],
+                                  ),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                    CrossAxisAlignment.start,
+                                    children: [
+                                      ClipRRect(
+                                        borderRadius:
+                                        const BorderRadius.vertical(
+                                          top: Radius.circular(20),
+                                        ),
+                                        child: Image.asset(
+                                          place['image'],
+                                          height: 130,
+                                          width: double.infinity,
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.all(12),
+                                        child: Row(
+                                          children: [
+                                            Expanded(
+                                              child: Text(
+                                                place['name'],
+                                                maxLines: 2,
+                                                overflow:
+                                                TextOverflow.ellipsis,
+                                                style: const TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 14,
+                                                ),
+                                              ),
+                                            ),
+                                            IconButton(
+                                              onPressed: () {
+                                                FavoritesManager
+                                                    .toggleFavorite(place);
+                                              },
+                                              icon: const Icon(
+                                                Icons.bookmark,
+                                                color: Colors.deepPurple,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              );
+                            },
+                          ),
+                        );
+                      },
+                    ),
                   ],
                 ),
               ),
             ),
 
-            /// Grid section
+            SliverToBoxAdapter(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                child: const Text(
+                  'Categories',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black87,
+                  ),
+                ),
+              ),
+            ),
+
             SliverPadding(
               padding: const EdgeInsets.fromLTRB(20, 10, 20, 24),
               sliver: SliverMasonryGrid.count(
@@ -94,7 +232,8 @@ class ExploreScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildCategoryCard(BuildContext context, Map<String, dynamic> category) {
+  Widget _buildCategoryCard(
+      BuildContext context, Map<String, dynamic> category) {
     return GestureDetector(
       onTap: () {
         Navigator.push(
@@ -122,10 +261,9 @@ class ExploreScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-
-            /// Image
             ClipRRect(
-              borderRadius: const BorderRadius.vertical(top: Radius.circular(22)),
+              borderRadius:
+              const BorderRadius.vertical(top: Radius.circular(22)),
               child: Image.asset(
                 category['img'],
                 height: 140,
@@ -138,8 +276,6 @@ class ExploreScreen extends StatelessWidget {
                 ),
               ),
             ),
-
-            /// Text
             Padding(
               padding: const EdgeInsets.fromLTRB(14, 14, 14, 16),
               child: Column(
